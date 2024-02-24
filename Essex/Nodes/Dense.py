@@ -67,6 +67,9 @@ class Dense:
         self.bias -= biasChange * self.learningRate
 
         return dErrordInput
+    
+    def getModel(self):
+        return self.weights, self.bias
 
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
